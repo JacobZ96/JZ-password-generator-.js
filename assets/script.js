@@ -21,7 +21,7 @@ function makeid(length) {
   return result; 
 }
 
-console.log(makeid(13));
+console.log(makeid(20));
 
 // Pseudocode (SUPER IMPORTANT)
 // Array for each one 
@@ -38,6 +38,10 @@ console.log(makeid(13));
 // var specialIndex = Math.floor(Math.random () * specialChar.length);
 
 window.prompt("How long do you want your password?");
+window.confirm("Do you want lowercase letters?");
+window.confirm("Do you want numbers?");
+window.confirm("Do you want UPPERCASE letters?");
+window.confirm("Do you want special characters?");
 
 
 
