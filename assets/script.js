@@ -25,10 +25,10 @@ console.log(makeid(20));
 
 // Pseudocode (SUPER IMPORTANT)
 // Array for each one 
-// var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+// var lowercaseCharacters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 // var numbers = [0,1,2,3,4,5,6,7,8,9]
-// var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-// var specialChar = ["?","!","#","$","%","&"]
+// var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+// var specialCharacters = ["?","!","#","$","%","&"]
 
 // var results = [lowerCase + numbers + upperCase + specialChar];
 
@@ -36,13 +36,13 @@ console.log(makeid(20));
 // var numberIndex = Math.floor(Math.random () * numbers.length);
 // var upperIndex = Math.floor(Math.random () * upperCase.length);
 // var specialIndex = Math.floor(Math.random () * specialChar.length);
-
-window.prompt("How long do you want your password?");
-window.confirm("Do you want lowercase letters?");
-window.confirm("Do you want numbers?");
-window.confirm("Do you want UPPERCASE letters?");
-window.confirm("Do you want special characters?");
-
+function givePrompts() {
+  window.prompt("How long do you want your password?");
+  window.confirm("Do you want lowercase letters?");
+  window.confirm("Do you want numbers?");
+  window.confirm("Do you want UPPERCASE letters?");
+  window.confirm("Do you want special characters?");
+}
 
 
 // User input
@@ -74,6 +74,17 @@ window.confirm("Do you want special characters?");
 // display results on to the page 
   // target text area, display results
 
+function start() {
+  givePrompts();
+}
+
+start();
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+document.getElementById("generate").addEventListener("click", () => {
+  alert("ive been clicked");
+  start();
+})
+
+
+//generateBtn.addEventListener("click", writePassword);
