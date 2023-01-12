@@ -78,7 +78,7 @@ function start() {
   givePrompts();
 }
 
-start();
+
 
 // Add event listener to generate button
 document.getElementById("generate").addEventListener("click", () => {
