@@ -30,12 +30,38 @@ console.log(makeid(20));
 // var uppercaseCharacters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
 // var specialCharacters = ["?","!","#","$","%","&"]
 
-// var results = [lowerCase + numbers + upperCase + specialChar];
+// var results = "";
 
 // var lowerIndex = Math.floor(Math.random () * lowerCase.length);
 // var numberIndex = Math.floor(Math.random () * numbers.length);
 // var upperIndex = Math.floor(Math.random () * upperCase.length);
 // var specialIndex = Math.floor(Math.random () * specialChar.length);
+
+// userChoice is just a place holder for now 
+if (lowercaseCharacters === True) {
+  userChoice = userChoice + lowerIndex;
+} 
+if (uppercaseCharacters === True) {
+  userChoice = userChoice + upperIndex;
+} 
+if (numbers === True) {
+  userChoice = numbers.concat (numbers);
+}
+if (specialCharacters === True) {
+  userChoice = specialCharacters.concat (specialCharacters)
+} 
+
+// creating password legth prompt 
+let paswordLength = prompt("How long do you want your password?");
+if (passwordLength > 8 && passwordLength < 128) {
+  
+}
+
+
+
+
+
+
 function givePrompts() {
   window.prompt("How long do you want your password?");
   window.confirm("Do you want lowercase letters?");
@@ -43,6 +69,15 @@ function givePrompts() {
   window.confirm("Do you want UPPERCASE letters?");
   window.confirm("Do you want special characters?");
 }
+// userInput is a place holder for now 
+function userInput() {
+  if (length < 8 || length > 128); {
+    alert("You must choose a value between 8-128.");
+    return;
+  }
+}
+
+
 
 
 // User input
@@ -55,22 +90,16 @@ function givePrompts() {
 
 // Conditional 
   // if the user choses X number of characters total
-    // for Loop that iterates X number of times
-  
+    // for Loop that iterates X number of times 
     // if the user chooses to add lowercase characters
-    // randomly select Y number of characters, push it to results array
-  
+    // randomly select Y number of characters, push it to results array  
     // if the user chooses to add uppercase characters
     // randomly select Y number of characters, push it to results array
-  
     // if the user chooses to add nums
-    // randomly select Y number of characters, push it to results array
-  
+    // randomly select Y number of characters, push it to results array  
     // if the user choose to ad special characters 
     // randomly select Y number of characters, push it to results array
-    
 // results = ["a", "B", "0", "?"]
-
 // display results on to the page 
   // target text area, display results
 
@@ -82,7 +111,7 @@ function start() {
 
 // Add event listener to generate button
 document.getElementById("generate").addEventListener("click", () => {
-  alert("ive been clicked");
+  alert("Lets create a password!!");
   start();
 })
 
