@@ -75,8 +75,8 @@ for (let index = 0; index < num; index++) {
   
 }
 for (let index = 0; index < num2; index++) {
-  var guaranteedCharacter = getRandom(guaranteedCharacters); // For loop used to guarantee at least 1 of the specified characters is used in the password
-  result.push(guaranteedCharacter); 
+  var guarateedCharacter = getRandom(guarateedCharacters); // For loop used to guarantee at least 1 of the specified characters is used in the password
+  result.push(guarateedCharacter); 
 }
 console.log(result);
 
