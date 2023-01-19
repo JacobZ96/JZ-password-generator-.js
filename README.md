@@ -24,5 +24,7 @@ Creating a Password generator with javascrips
 * THEN the password is either displayed in an alert or written to the page
 
 ## Live Link 
+https://jacobz96.github.io/JZ-password-generator-.js/
 
 ## Screenshot
+![Screenshot of Webpage](./assets/images/Week3.png)
